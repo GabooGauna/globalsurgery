@@ -1,9 +1,9 @@
-import React from 'react';
-import imagenManos from '../assets/manos.jpg';
+import React from "react";
+import imagenManos from "../assets/manos.jpg";
 
 const About = () => {
   return (
-    <div className="mt-8 max-w-[700px] mx-auto">
+    <div className="mt-8 max-w-[700px] lg:max-w-[900px] mx-auto mb-10">
       <div className="w-11/12 mx-auto text-center py-8 px-5">
         <h2 className="text-center font-poppins text-3xl font-bold text-gray-900 py-6">
           ¿Quiénes somos?
@@ -16,8 +16,9 @@ const About = () => {
           diferencia en el ámbito de la atención médica.
         </p>
       </div>
-      <div className="mx-auto w-11/12 px-5 flex flex-col  shadow-md shadow-gray-700 rounded-md py-7">
-        <div className="p-4 bg-gray-900 rounded-md">
+
+      <div className="mx-auto w-11/12 px-4 flex flex-col lg:flex lg:flex-row lg:gap-1 lg:w-full shadow-md shadow-gray-700 rounded-md py-5">
+        <div className="p-4 bg-gray-900 rounded-md lg:w-1/3">
           <h2 className="text-white text-center font-playfair text-xl py-3 font-semibold">
             Nuestra misión
           </h2>
@@ -26,10 +27,10 @@ const About = () => {
             provisión de soluciones de vanguardia.
           </p>
         </div>
-        <div className="py-3">
+        <div className="py-3 lg:w-1/3 lg:py-0">
           <img className=" object-cover" src={imagenManos} alt="manos" />
         </div>
-        <div className="p-4 bg-gray-900 rounded-md">
+        <div className="p-4 bg-gray-900 rounded-md lg:w-1/3">
           <h2 className="text-white text-center font-playfair text-xl py-3 font-semibold">
             Nuestra visión
           </h2>

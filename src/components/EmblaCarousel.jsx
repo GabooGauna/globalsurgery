@@ -1,9 +1,9 @@
-import React from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
-import primeraImagen from '../assets/img1.png';
-import segundaImagen from '../assets/img2.png';
-import terceraImagen from '../assets/img3.png';
+import React from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import primeraImagen from "../assets/img1.png";
+import segundaImagen from "../assets/img2.png";
+import terceraImagen from "../assets/img3.png";
 
 export const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -13,7 +13,7 @@ export const EmblaCarousel = () => {
       <div className="embla__container">
         <div className="embla__slide relative inline-block text-center w-full">
           <img
-            className="max-h-[350px] w-full object-cover"
+            className="max-h-[350px] lg:max-h-[420px] w-full object-cover"
             src={primeraImagen}
             alt=""
           />
@@ -31,17 +31,17 @@ export const EmblaCarousel = () => {
 
         <div className="embla__slide embla__slide relative inline-block text-center w-full">
           <img
-            className="max-h-[350px] w-full object-cover"
+            className="max-h-[350px] lg:max-h-[420px] w-full object-cover"
             src={segundaImagen}
             alt=""
           />
           <div className="absolute top-28 left-2">
             <h2 className="text-2xl font-medium text-gray-200 font-poppins drop-shadow-2xl">
-              Soluciones{' '}
+              Soluciones{" "}
               <div className="pl-20">
                 <span className="font-playfair text-4xl text-gray-900 font-bold">
                   personalizadas
-                </span>{' '}
+                </span>{" "}
               </div>
               <span className="font-playfair text-2xl text-gray-200 font-bold pl-28">
                 y <span className="text-4xl">adaptables</span>
@@ -52,13 +52,13 @@ export const EmblaCarousel = () => {
 
         <div className="embla__slide embla__slide relative inline-block text-center w-full">
           <img
-            className="max-h-[350px] w-full object-cover"
+            className="max-h-[350px] lg:max-h-[420px] w-full object-cover"
             src={terceraImagen}
             alt=""
           />
           <div className="absolute top-10 left-16 ">
             <h2 className="text-3xl sm:text-4xl font-medium text-gray-200 font-poppins drop-shadow-2xl">
-              Calidad{' '}
+              Calidad{" "}
               <div className="pr-16">
                 <span className="text-2xl sm:text-3xl ">Innovación</span>
               </div>
